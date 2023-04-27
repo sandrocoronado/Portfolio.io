@@ -331,7 +331,7 @@ html{
 }
 @keyframes PowerBI {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .Python{
@@ -340,7 +340,7 @@ html{
 }
 @keyframes Python {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .Excel{
@@ -349,7 +349,7 @@ html{
 }
 @keyframes Excel {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .Tableau{
@@ -385,7 +385,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .creatividad{

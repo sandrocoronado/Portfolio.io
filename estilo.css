@@ -331,7 +331,7 @@ html{
 }
 @keyframes PowerBI {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .Python{
@@ -340,7 +340,7 @@ html{
 }
 @keyframes Python {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .Excel{
@@ -367,7 +367,7 @@ html{
 }
 @keyframes SQL {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .comunicacion{
@@ -768,3 +768,31 @@ footer .arriba{
         width: 100%;
     }
 }
+
+/* Estilo base para el botón */
+#boton-cambio-idioma {
+    font-family: 'Work Sans', sans-serif; /* o la fuente que estés utilizando en tu menú */
+    font-size: 1em; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #00276c; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #00276c; /* Borde blanco para que coincida con el esquema de colores */
+    border-radius: 20px; /* Bordes redondeados para un look más moderno */
+    padding: 0.5em 1em; /* Espaciado interno */
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+  }
+  
+  /* Estilo para cuando se pasa el cursor por encima */
+  #boton-cambio-idioma:hover {
+    background-color: #00276c; /* Fondo blanco al pasar el cursor */
+    color: #00276c; /* Color de texto azul para contraste */
+  }
+  
+  /* Ajustes responsivos para el botón */
+  @media (max-width: 768px) {
+    #boton-cambio-idioma {
+      font-size: 0.9em; /* Disminuye la fuente para dispositivos móviles */
+      padding: 0.3em 0.6em; /* Menos espaciado interno para ahorrar espacio */
+    }
+  }
+  

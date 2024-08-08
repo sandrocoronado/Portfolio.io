@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- HEADER MENU -->
-    <div class="container-header">
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
         <header>
             <div class="logo">
                 <a href="#">Alessandro</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#home" onclick="select()">HOME</a></li>
-                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
-                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
-                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
-                    <li><a href="#resume" onclick="select()">RESUME</a></li>
-                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
-                    <li><a href=" " onclick="select()"> </a></li>
-                    <button id="language-switch-button" onclick="changeLanguage('en')">English</button>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href=" " onclick="seleccionar()"> </a></li>
+                    <button id="boton-cambio-idioma" onclick="cambiarIdioma('en')">Español</button>
                 </ul>   
             </nav>
-            <div class="nav-responsive" onclick="toggleMenu()">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>   
         </header>
     </div>
-    <!-- HOME SECTION -->
-    <section id="home" class="home">
-        <div class="banner-content">
-          <div class="img-container">
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+          <div class="contenedor-img">
             <img src="./images/Gradient Professional Linkedin Profile Picture 2.png" alt="">
           </div>
           <h1>Alessandro Coronado</h1>
-          <h2 data-translation="Commercial Engineer - Data Analyst">Commercial Engineer - Data Analyst</h2>
-          <div class="social-media">
+          <h2 data-traduccion="Ingeniero Comercial - Analista de Datos">Ingeniero Comercial - Analista de Datos</h2>
+          <div class="redes">
             <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://github.com/sandrocoronado"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/sandrito_coro/"><i class="fa-brands fa-instagram"></i></a>
@@ -49,50 +49,50 @@
           </div>
         </div>
       </section>
-    <!-- SKILLS SECTION -->
+    <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
-        <div class="section-content">
-            <h2 data-translation="Skills">Skills</h2>
-            <div class="row">
+        <div class="contenido-seccion">
+            <h2 data-traduccion="Habilidades">Habilidades</h2>
+            <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3 data-translation="Technical Skills">Technical Skills</h3>
+                    <h3 data-traduccion="Habilidades Tenicas">Habilidades Tenicas</h3>
                     <div class="skill">
                         <span>PowerBI</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Python</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Excel</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Tableau</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>SQL</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>75%</span>
                             </div>
                         </div>
@@ -100,43 +100,43 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3 data-translation="Professional Skills">Professional Skills</h3>
+                    <h3 data-traduccion="Habilidades Profesionales">Habilidades Profesionales</h3>
                     <div class="skill">
-                        <span data-translation="Effective Communication">Effective Communication</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <span data-traduccion="Comunicación Efectiva">Comunicación Efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span data-translation="Teamwork">Teamwork</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <span data-traduccion="Trabajo en Equipo">Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>85%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span data-translation="Creativity">Creativity</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <span data-traduccion="Creatividad">Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>95%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span data-translation="Strategic Analysis">Strategic Analysis</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <span data-traduccion="Análisis Estratégico">Análisis Estratégico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span data-translation="Decision Making">Decision Making</span>
-                        <div class="skill-bar">
-                            <div class="progress">
+                        <span data-traduccion="Toma de Decisiones">Toma de Decisiones</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
                                 <span>75%</span>
                             </div>
                         </div>
@@ -145,85 +145,86 @@
             </div>
         </div>
     </section>
- <!-- PORTFOLIO SECTION -->
+ <!-- SECCION PORTFOLIO -->
 <section id="portfolio" class="portfolio">
-    <div class="section-content">
+    <div class="contenido-seccion">
         <h2>PORTFOLIO</h2>
-        <div class="gallery">
-            <div class="project">
+        <div class="galeria">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=2dd1da62-95be-4107-8f37-99b550a3b2f9&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                 <img src="./images/Eficiencia.jpg" alt="">
                 <div class="overlay">
-                    <h3>Efficiency Analysis</h3>
-                    <p>Data Analysis</p>
+                    <h3>Análisis de Eficiencia</h3>
+                    <p>Análisis de Datos</p>
                 </div>
                 </a>
             </div>
-            <div class="project">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=ee6b34b5-dfdb-4c3e-acf8-0a11809e575c&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                     <img src="./images/Prediccion de Autos.png" alt="">
                     <div class="overlay">
-                        <h3>Price Prediction</h3>
-                        <p>Data Analysis</p>
+                        <h3>Predicción de Precios</h3>
+                        <p>Análisis de Datos</p>
                     </div>
                 </a>
             </div>
-            <div class="project">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=a5501aec-aa7a-47b7-a8fc-8a2f0715745b&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                 <img src="./images/Overall_Perfomance.png" alt="">
                 <div class="overlay">
-                    <h3>Overall Performance</h3>
-                    <p>Data Analysis</p>
+                    <h3>Overall_Perfomance</h3>
+                    <p>Análisis de Datos</p>
                 </div>
                 </a>
             </div>
-            <div class="project">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=c6ede102-b825-43e3-b6dc-ace110690fe9&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                     <img src="./images/Segmentacion.png" alt="">
                     <div class="overlay">
-                        <h3>Customer Segmentation</h3>
-                        <p>Data Analysis</p>
+                        <h3>Segmentación De Clientes</h3>
+                        <p>Análisis de Datos</p>
                     </div>
                 </a>
             </div>
-            <div class="project">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=0d6ca9e8-85d1-455e-81f0-ed1416f39055&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                     <img src="./images/Electric_Company.png" alt="">
                     <div class="overlay">
                         <h3>Electricity Prices vs Inflation</h3>
-                        <p>Data Analysis</p>
+                        <p>Análisis de Datos</p>
                     </div>
                 </a>
             </div>
-            <div class="project">
+            <div class="proyecto">
                 <a href="https://app.powerbi.com/reportEmbed?reportId=bf917742-4f4b-4176-b96d-fb2d5b7c49e5&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72">
                     <img src="./images/Pink Minimalist New Collection Photo Instagram Post.png" alt="">
                     <div class="overlay">
-                        <h3>Sales Analysis</h3>
-                        <p>Data Analysis</p>
+                        <h3>Análisis de Ventas</h3>
+                        <p>Análisis de Datos</p>
                     </div>
                 </a>
             </div>
         </div>
     </div>
 </section>
-    <!-- ABOUT ME SECTION -->
-    <section id="aboutme" class="aboutme">
-        <div class="section-content">
-            <h2 data-translation="About Me">About Me</h2>
-                <p data-translation="Firstly, welcome to my website. It's a pleasure to have you here. My name is Alessandro Coronado. I am known for my proactivity, passion, creativity, and ambition in achieving my goals. I am passionate about overcoming challenges and finding solutions using data and new technologies, always ready to adapt to any situation.">
-                <span>Firstly, welcome to my website. It's a pleasure to have you here. My name is Alessandro Coronado. I am known for my proactivity, passion, creativity, and ambition in achieving my goals. I am passionate about overcoming challenges and finding solutions using data and new technologies, always ready to adapt to any situation.</span></p>
-            <div class="row">
-                <!-- personal details -->
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 data-traduccion="About Me">Sobre Mí</h2>
+                <p data-traduccion="Primeramente bienvenido a mi Página Web es un gusto tenerte aquí.Me presento, soy Alessandro Coronado una persona que se caracteriza por su proactividad, pasión, creatividad y ambición en la consecución de sus metas.Me apasiona superar retos y encontrar soluciones utilizando datos y nuevas tecnologías, siempre dispuesto a adaptarme a cualquier situación.">
+                <span>Primeramente bienvenido a mi Página Web es un gusto tenerte aquí.
+                    Me presento, soy Alessandro Coronado soy una persona que se caracteriza por su proactividad, pasión, creatividad y ambición en la consecución de sus metas.Me apasiona superar retos y encontrar soluciones utilizando datos y nuevas tecnologías, siempre dispuesto a adaptarme a cualquier situación.</span></p>
+            <div class="fila">
+                <!-- datos personales -->
                 <div class="col">
-                    <h3 data-translation="Personal Details">Personal Details</h3>
+                    <h3 data-traduccion="Datos Personales">Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong data-translation="Birthday">Birthday</strong>
+                            <strong data-traduccion="Cumpleaños">Cumpleaños</strong>
                             12-08-1999
                         </li>
                         <li>
-                            <strong data-translation="Phone">Phone</strong>
+                            <strong data-traduccion="Teléfono">Teléfono</strong>
                             +591 63893285
                         </li>
                         <li>
@@ -235,50 +236,50 @@
                             www.alesscor.com
                         </li>
                         <li>
-                            <strong data-translation="Address">Address</strong>
+                            <strong data-traduccion="Dirección">Dirección</strong>
                             Santa Cruz, Bolivia
                         </li>
                         <li>
-                            <strong data-translation="Job">Job</strong>
-                            <span data-translation="Data Analyst/Data Scientist">Data Analyst/Data Scientist</span>
+                            <strong data-traduccion="Trabajo">Trabajo</strong>
+                            <span data-traduccion="Analista de Datos/Cientifico de Datos">Analista de Datos/Cientifico de Datos</span>
                         </li>
                     </ul>
                 </div>
-                <!-- interests -->
+                <!-- intereses -->
                 <div class="col">
-                    <h3 data-translation="Interests">Interests</h3>
-                    <div class="interest-container">
-                        <div class="interest">
+                    <h3 data-traduccion="Intereses">Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span data-translation="GAMES">GAMES</span>
+                            <span data-traduccion="JUEGOS">JUEGOS</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span data-translation="MUSIC">MUSIC</span>
+                            <span data-traduccion="MUSICA">MUSICA</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-solid fa-plane"></i>
-                            <span data-translation="TRAVEL">TRAVEL</span>
+                            <span data-traduccion="VIAJAR">VIAJAR</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-sharp fa-solid fa-video"></i>
-                            <span data-translation="MOVIES">MOVIES</span>
+                            <span data-traduccion="PELICULAS">PELICULAS</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-sharp fa-solid fa-futbol"></i>
-                            <span data-translation="SPORT">SPORT</span>
+                            <span data-traduccion="DEPORTE">DEPORTE</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span data-translation="BOOKS">BOOKS</span>
+                            <span data-traduccion="LIBROS">LIBROS</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-solid fa-car"></i>
-                            <span data-translation="CARS">CARS</span>
+                            <span data-traduccion="AUTOS">AUTOS</span>
                         </div>
-                        <div class="interest">
+                        <div class="interes">
                             <i class="fa-solid fa-camera"></i>
-                            <span data-translation="PHOTOS">PHOTOS</span>
+                            <span data-traduccion="FOTOS">FOTOS</span>
                         </div>
                     </div>
                 </div>
@@ -291,123 +292,123 @@
             </button>
         </div>
     </section>
-    <!-- RESUME SECTION -->
-    <section id="resume" class="resume">
-        <div class="section-content">
-            <h2>Resume</h2>
-            <div class="row">
-                <div class="col left">
-                    <h3 data-translation="Education">Education</h3>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3 data-traduccion="Educación">Educación</h3>
                     
-                    <div class="item left">
-                        <h4 data-translation="Bachelor's Degree in Commercial Engineering">Bachelor's Degree in Commercial Engineering</h4>
-                        <span class="institution">Universidad Privada Del Valle</span>
-                        <span data-translation="February 2018 - November 2022" class="date">February 2018 - November 2022</span>
+                    <div class="item izq">
+                        <h4 data-traduccion="Licenciatura en Ingeniería Comercial">Licenciatura en Ingeniería Comercial</h4>
+                        <span class="casa">Universidad Privada Del Valle</span>
+                        <span data-traduccion="Febrero de 2018 - Noviembre de 2022" class="fecha">Febrero de 2018 - Noviembre de 2022</span>
                         <p><ul>
-                            <li data-translation="Member of the Scientific Society">Member of the Scientific Society.</li>
-                            <li data-translation="Teaching Assistant in Statistical Methods-II">Teaching Assistant in Statistical Methods-II.</li>
-                            <li data-translation="Member of the Mathematics Club">Member of the Mathematics Club.</li>
+                            <li data-traduccion="Miembro de la Sociedad Científica">Miembro de la Sociedad Científica.</li>
+                            <li data-traduccion="Ayudante en Métodos Estadísticos-II">Ayudante en Métodos Estadísticos-II.</li>
+                            <li data-traduccion="Miembro del Club de Matemáticas">Miembro del Club de Matemáticas.</li>
                           </ul>
                           </p>
-                        <div class="connector-left">
-                            <div class="circle-left"></div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
                         </div>
                     </div>
-                    <div class="item left">
-                        <h4 data-translation="Specialization in Data Analysis">"Specialization in Data Analysis"</h4>
-                        <span class="institution">Universidad Católica Boliviana "San Pablo"</span>
-                        <span data-translation="November 2022 - August 2023" class="date">November 2022 - August 2023</span>
+                    <div class="item izq">
+                        <h4 data-traduccion="Especialidad en Análisis de Datos">"Especialidad en Análisis de Datos"</h4>
+                        <span class="casa">Universidad Católica Boliviana "San Pablo"</span>
+                        <span data-traduccion="Noviembre de 2022-Agosto de 2023" class="fecha">Noviembre de 2022-Agosto de 2023</span>
                         <p>
-                            Brief description of the specialization or notable achievements. For example:
+                            Descripción breve de la especialidad o logros destacados. Por ejemplo:
                             <ul>
-                                <li data-translation="Introduction to Data Science">Introduction to Data Science</li>
-                                <li data-translation="Statistical Analysis I">Statistical Analysis I</li>
-                                <li data-translation="Data Mining">Data Mining</li>
-                                <li data-translation="Data Warehouses and Integration">Data Warehouses and Integration</li>
-                                <li data-translation="Advanced Databases">Advanced Databases</li>
+                                <li data-traduccion="Introducción a Ciencia de Datos">Introducción a Ciencia de Datos</li>
+                                <li data-traduccion="Análisis Estadisticos I">Análisis Estadisticos I</li>
+                                <li data-traduccion="Minería de Datos">Minería de Datos</li>
+                                <li data-traduccion="Almacenes de Datos e Integración">Almacenes de Datos e Integración</li>
+                                <li data-traduccion="Bases de Datos Avanzada">Bases de Datos Avanzadas</li>
                             </ul>
                         </p>
-                        <div class="connector-left">
-                            <div class="circle-left"></div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
                         </div>
                     </div>
 
-                    <div class="item left">
-                        <h4 data-translation="Master's Degree in Data Science">Master's Degree in Data Science</h4>
-                        <span class="institution">Universidad Católica Boliviana "San Pablo"</span>
-                        <span class="date">2022 - 2024</span>
-                        <p data-translation="Subjects Passed to Date">Subjects Passed to Date
+                    <div class="item izq">
+                        <h4 data-traduccion="Maestría en Ciencia de Datos">Maestría en Ciencia de Datos</h4>
+                        <span class="casa">Universidad Católica Boliviana "San Pablo"</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p data-traduccion="Materias Aprobadas a la fecha">Materias Aprobadas a la fecha
                             <ul>
-                                <li data-translation="Introduction to Data Science">Introduction to Data Science</li>
-                                <li data-translation="Statistical Analysis I">Statistical Analysis I</li>
-                                <li data-translation="Data Mining">Data Mining</li>
-                                <li data-translation="Data Warehouses and Integration">Data Warehouses and Integration</li>
-                                <li data-translation="Advanced Databases">Advanced Databases</li>
-                                <li data-translation="Data Mining II">Data Mining II</li>
-                                <li data-translation="Statistical Learning">Statistical Learning</li>
-                                <li data-translation="Big Data Technologies">Big Data Technologies</li>
-                                <li data-translation="Machine Learning">Machine Learning</li>
-                                <li data-translation="Deep Learning">Deep Learning</li>
-                                <li data-translation="Decision Support Systems">Decision Support Systems</li>
-                                <li data-translation="Strategic Management">Strategic Management</li>
+                                <li data-traduccion="Introducción a Ciencia de Datos">Introducción a Ciencia de Datos</li>
+                                <li data-traduccion="Análisis Estadisticos I">Análisis Estadisticos I</li>
+                                <li data-traduccion="Minería de Datos">Minería de Datos</li>
+                                <li data-traduccion="Almacenes de Datos e Integración">Almacenes de Datos e Integración</li>
+                                <li data-traduccion="Bases de Datos Avanzada">Bases de Datos Avanzadas</li>
+                                <li data-traduccion="Minería de Datos II">Minería de Datos II </li>
+                                <li data-traduccion="Statiscal Learning">Statiscal Learning </li>
+                                <li data-traduccion="Tecnologías en Big Data">Tecnologías en Big Data</li>
+                                <li data-traduccion="Machine Learning">Machine Learning</li>
+                                <li data-traduccion="Deep Learning">Deep Learning</li>
+                                <li data-traduccion="Sistema de Apoyo a la Toma de Decisiones">Sistema de Apoyo a la Toma de Decisiones</li>
+                                <li data-traduccion="Gestión Estratégica">Gestión Estratégica</li>
                             </ul>
                         </p>
-                        <div class="connector-left">
-                            <div class="circle-left"></div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col right">
-                    <h3 data-translation="Work Experience">Work Experience</h3>
-                    <div class="item right">
-                        <h4 data-translation="Assistant in Market Research and International Marketing">Assistant in Market Research and International Marketing</h4>
-                        <span class="institution">Univalle - University</span>
-                        <span data-translation="August 2021 - August 2022" class="date">August 2021 - August 2022</span>
+                <div class="col derecha">
+                    <h3 data-traduccion="Experiencia de trabajo">Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4 data-traduccion="Asistente en Investigación de Mercado e Marketing Internacional">Asistente en Investigación de Mercado e Marketing Internacional</h4>
+                        <span class="casa">Univalle - University</span>
+                        <span data-traduccion="Agosto de 2021 - Agosto de 2022" class="fecha">Agosto de 2021 - Agosto de 2022</span>
                         <p> <ul>
-                            <li data-translation="A/B testing analysis to measure the effectiveness of advertising campaigns.">A/B testing analysis to measure the effectiveness of advertising campaigns.</li>
-                            <li data-translation="Buyer persona segmentation for social media proposal analysis.">Buyer persona segmentation for social media proposal analysis.</li>
-                            <li data-translation="Qualitative market studies to improve customer service.">Qualitative market studies to improve customer service.</li>
-                            <li data-translation="Price analysis and forecasting in relation to demand.">Price analysis and forecasting in relation to demand.</li>
-                            <li data-translation="Study of competitor strategies and services.">Study of competitor strategies and services.</li>
-                            <li data-translation="Automation of email marketing and WhatsApp campaigns with Python.">Automation of email marketing and WhatsApp campaigns with Python.</li>
+                            <li data-traduccion="Análisis de A/B testing para medir la efectividad de campañas publicitarias.">Análisis de A/B testing para medir la efectividad de campañas publicitarias.</li>
+                            <li data-traduccion="Segmentación de buyer personas para análisis de propuestas de social media.">Segmentación de buyer personas para análisis de propuestas de social media.</li>
+                            <li data-traduccion="Estudios de mercado cualitativo para mejorar el servicio al cliente.">Estudios de mercado cualitativo para mejorar el servicio al cliente.</li>
+                            <li data-traduccion="Elaboración de análisis de precios y pronóstico en relación a la demanda.">Elaboración de análisis de precios y pronóstico en relación a la demanda.</li>
+                            <li data-traduccion="Estudio de estrategias y servicios de la competencia.">Estudio de estrategias y servicios de la competencia.</li>
+                            <li data-traduccion="Automatización de e-mail marketing y envíos de whatsapp con python.">Automatización de e-mail marketing y envíos de whatsapp con python.</li>
                           </ul>
                           </p>
-                        <div class="connector-right">
-                            <div class="circle-right"></div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
                         </div>
                     </div>
-                    <div class="item right">
-                        <h4 data-translation="Data Analyst">Data Analyst</h4>
-                        <span class="institution">Multi International - Retail</span>
-                        <span data-translation="August 2022 - August 2023" class="date">August 2022 - August 2023</span>
+                    <div class="item der">
+                        <h4 data-traduccion="Analista de Datos">Data Analytics</h4>
+                        <span class="casa">Multi Internacional - Retail</span>
+                        <span data-traduccion="Agosto de 2022 - Agosto de 2023" class="fecha">Agosto de 2022 - Agosto de 2023</span>
                         <p><ul>
-                            <li data-translation="Collection of prices and product characteristics from competitors' e-commerce sites with web scraping.">Collection of prices and product characteristics from competitors' e-commerce sites with web scraping.</li>
-                            <li data-translation="Analysis and segmentation of positioning strategies in the modern market.">Analysis and segmentation of positioning strategies in the modern market.</li>
-                            <li data-translation="Prediction and analysis of sales trends through time series forecasting.">Prediction and analysis of sales trends through time series forecasting.</li>
-                            <li data-translation="Study of purchase factors, consumer behavior, and preferences.">Study of purchase factors, consumer behavior, and preferences.</li>
+                            <li data-traduccion="Recopilación de precios y características de productos de la competencia en comercios electrónicos con web scraping.">Recopilación de precios y características de productos de la competencia en comercios electrónicos con web scraping.</li>
+                            <li data-traduccion="Análisis y segmentación de estrategias de posicionamiento en el mercado moderno.">Análisis y segmentación de estrategias de posicionamiento en el mercado moderno.</li>
+                            <li data-traduccion="Predicción y análisis de tendencias de ventas a través de pronósticos de series de tiempo.">Predicción y análisis de tendencias de ventas a través de pronósticos de series de tiempo.</li>
+                            <li data-traduccion="Estudio de factores de compra, comportamiento y preferencias del consumidor">Estudio de factores de compra, comportamiento y preferencias del consumidor.</li>
                           </ul>
                           </p>
-                        <div class="connector-right">
-                            <div class="circle-right"></div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
                         </div>
                     </div>
-                    <div class="item right">
-                        <h4 data-translation="Business Intelligence Analyst">Business Intelligence Analyst</h4>
-                        <span class="institution">FONPLATA Development Bank</span>
-                        <span class="date">August 2023 - August 2024</span>
+                    <div class="item der">
+                        <h4 data-traduccion="Business Intelligence Analyst">Business Intelligence</h4>
+                        <span class="casa">Banco de Desarrollo FONPLATA</span>
+                        <span class="fecha">Agosto de 2023 - Agosto de 2024</span>
                         <p>
                             <ul>
-                                <li data-translation="Data cleaning, processing, and preprocessing from various sources.">Data cleaning, processing, and preprocessing from various sources.</li>
-                                <li data-translation="Support in loading and building the Product Integration System and Product Dashboard.">Support in loading and building the Product Integration System and Product Dashboard.</li>
-                                <li data-translation="Implementation of online reports using Python.">Implementation of online reports using Python.</li>
-                                <li data-translation="Development of new metrics for efficiency indicators.">Development of new metrics for efficiency indicators.</li>
-                                <li data-translation="Development of new technology proposals to improve decision-making.">Development of new technology proposals to improve decision-making.</li>
-                                <li data-translation="Creation of neural network models to predict project disbursements.">Creation of neural network models to predict project disbursements.</li>
-                                <!-- Add more items as needed -->
+                                <li data-traduccion="Limpieza,Tratamiento y Preprocesamiento de Datos de distintas fuentes">Limpieza,Tratamiento y Preprocesamiento de Datos de distintas fuentes".</li>
+                                <li data-traduccion="Apoyo en la carga y la construcción de Sistema de Integración de Productos y Tablero Informatico de Productos">Apoyo en la carga y la construcción de Sistema de Integración de Productos y Tablero Informatico de Productos".</li>
+                                <li data-traduccion="Implementación de Reportes en linea mediante Python">Implementación de Reportes en linea mediante Python".</li>
+                                <li data-traduccion="Elaboración de Nuevas Metricas para Indicadores de Eficiencia">Elaboración de Nuevas Metricas para Indicadores de Eficiencia.</li>
+                                <li data-traduccion="Desarrollo de Propuestas de Nuevas Tecnologias para mejorar la Toma de Decisiones">Desarrollo de Propuestas de Nuevas Tecnologias para mejorar la Toma de Decisiones.</li>
+                                <li data-traduccion="Generación de Modelos de Redes Neuronales para predecir los Desembolsos de los proyectos">Generación de Modelos de Redes Neuronales para predecir los Desembolsos de los proyectos.</li>
+                                <!-- Añade más ítems según sea necesario -->
                             </ul>
                         </p>
-                        <div class="connector-right">
-                            <div class="circle-right"></div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
                         </div>
                     </div>                    
                 </div>
@@ -416,10 +417,10 @@
     </section>
     <!-- footer -->
     <footer>
-        <a href="#home" class="to-top">
+        <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        <div class="social-media">
+        <div class="redes">
             <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://github.com/sandrocoronado"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/sandrito_coro/"><i class="fa-brands fa-instagram"></i></a>
